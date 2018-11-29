@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <link rel="stylesheet" href="bootstrap.min.css">  
+
+	<title>
+		
+	</title>
+	<style>
+	 body{
+    background-image: url("bg.png");
+       
+    }
+	.panel-body{
+        
+/*        border: 3px solid #696969;*/
+border-radius: 10px;
+margin-top: 25px;
+margin-bottom: 15px;
+margin-left: 20%;  
+margin-right: 20%;
+padding-left: 5%;
+           padding-right: 5%;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           
+-webkit-box-shadow: 10px -22px 169px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px -22px 169px -4px rgba(0,0,0,0.75);
+box-shadow: 10px -22px 169px -4px rgba(0,0,0,0.75);
+}
+
+.headings{
+	    font-size: 18px;
+	    font-family: "Lucida Console";
+}
+#mainHeading{
+		font-family: "Lucida Console";
+}
+
+</style>
+<script type="text/javascript">
+	
+function addData() {
+    alert("test");
+}
+
+
+</script>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+	<div class="col-md-3 col-sm-3 col-xs-12"></div>	
+	<div class="col-md-3 col-sm-3 col-xs-12"></div>
+	
+		<form action="/postaction" method="post"> 
+
+<div class="container">
+
+    <div class="row">
+            <div class="panel panel-primary">
+<!--                <div class="panel-heading"></div>-->
+                <div class="panel-body">
+
+       <form>
+                <input type="button" value="Home" onclick="window.location.href='/'" />
+        </form>
+    
+	<h1 align="center" id="mainHeading">Add a New Project</h1>
+<br>
+	  <div class="form-group">
+	   
+	 <p class="headings">Product Family</p><input type="text" name="family" class="form-control" id="productFamily"><br>
+	  	
+	 <p class="headings"> Product – URL Link</p><input type="text" name="product" class="form-control" id="ProductURL"><br>
+
+	 <p class="headings">PA - Experience</p><input type="text" name="experience" class="form-control" id="PA-Experience"><br>
+
+	 <p class="headings">PA - Client</p><input type="text" name="client" class="form-control" id="PA-Client"><br>
+
+	 <p class="headings">PA - Contact</p><input type="text" name="contact" class="form-control" id="PA-Contact"><br>
+
+	 <button onclick="addData()">Add Data</button>
+
+	  </div>
+	
+ </div>      
+      </div>
+      </div>
+        </div>
+	</form>
+
+	</div>
+	<div class="col-md-4 col-sm-4 col-xs-12"></div>
+</div>
+</body>
+</html>

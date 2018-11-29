@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Optional theme -->
+<!-- <link rel="stylesheet" type="text/css" href="css/global.css">
+ --><!-- Latest compiled and minified JavaScript -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+
+	<title></title>
+	<style>
+	 body{
+    background-image: url("bg.png");
+
+    }
+    #mainHeading{
+    font-family: "Lucida Console";
+}
+    .Headings{
+    font-family: "Lucida Console";
+}
+	.panel-body{
+
+/*        border: 3px solid #696969;*/
+border-radius: 10px;
+margin-top: 25px;
+margin-bottom: 15px;
+margin-left: 20%;
+margin-right: 20%;
+padding-left: 5%;
+           padding-right: 5%;
+           padding-top: 10px;
+           padding-bottom: 10px;
+
+-webkit-box-shadow: 10px -22px 169px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px -22px 169px -4px rgba(0,0,0,0.75);
+box-shadow: 10px -22px 169px -4px rgba(0,0,0,0.75);
+
+  }
+    }
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+	</style>
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="row">
+	<div class="col-md-3 col-sm-3 col-xs-12"></div>
+	<div class="col-md-3 col-sm-3 col-xs-12"></div>
+
+		<form>
+
+<div class="container">
+    <div class="row">
+            <div class="panel panel-primary">
+<!--                <div class="panel-heading"></div>-->
+
+
+                <div class="panel-body">
+  <form>
+    <input type="button" value="Home" onclick="window.location.href='/'" />
+  </form>
+	<h1 align="center" id="mainHeading">Welcome to Arcus</h1>
+
+	  <div class="form-group">
+            <form>
+                <input type="button" value="Add A Project" onclick="window.location.href='/form'" />
+           </form>
+
+<div class="arama">
+            <form action="/search" method="GET">
+        Search for a Project: <input type="search" name="search"/>
+                <input type="submit" />
+            </form>
+        </div>
+
+	</div>
+	 <br>
+	  <table align="center" class="Headings">
+  <tr>
+    <th>Product_Family</th>
+    <th>Product_URL</th>
+    <th>PA_Experience</th>
+	<th>PA_Client</th>
+    <th>PA_Contact</th>
+  </tr>
+    <% if(data) {data.forEach(function(data) { %>
+        <tr>
+        <td><%= data.family %> </td>
+        <td><%= data.product %> </td>
+        <td><%= data.experience %> </td>
+        <td><%= data.client %> </td>
+        <td><%= data.contact %> </td>
+        </tr>
+
+  <%  })} else{ %>
+  <tr>
+      <td colspan="3">No Data Available for your search</td>
+    </tr>
+    <% }; %>
+</table>
+ </div>
+      </div>
+      </div>
+        </div>
+	</form>
+
+	</div>
+	<div class="col-md-4 col-sm-4 col-xs-12"></div>
+</div>
+
+
+</body>
+</html>
