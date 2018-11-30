@@ -6,6 +6,9 @@ services:
 before_install:
   - docker build -t aeghobor/arcus -f Dockerfile.dev .
 
+script:
+  - 
+
 deploy:
   provider: elasticbeanstalk
   region: "eu-west-1"
