@@ -1,0 +1,230 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("binoculars.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Fonts start*/
+@font-face {
+  font-family: "Gotham Bold"; /*a name to be used later*/
+  src: url(GothamBold.ttf); /*URL to font*/
+}
+
+@font-face {
+  font-family: "Gotham Medium"; /*a name to be used later*/
+  src: url(GothamMedium.ttf); /*URL to font*/
+}
+
+@font-face {
+  font-family: "Gotham Light"; /*a name to be used later*/
+  src: url(GothamLight.ttf); /*URL to font*/
+}
+/*Fonts end*/
+
+.gotham-bold {
+  font-family: "Gotham Bold";
+}
+
+.gotham-medium {
+  font-family: "Gotham Medium";
+}
+
+.gotham-light {
+  font-family: "Gotham Light";
+}
+
+.nav-item {
+  font-size: 10pt;
+}
+
+.bottom-bord {
+  border-bottom: 0.5px solid #9AB1C5 !important;
+}
+
+.navbar {
+  box-shadow: none !important;
+}
+
+.active-cyan-4 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+}
+
+.active-cyan input[type=text] {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+}
+
+.active-cyan .fa, .active-cyan-4 .fa {
+    color: #4dd0e1;
+}
+
+h2 {
+  font-size: 56pt;
+}
+
+h4 {
+  font-size: 16pt;
+}
+
+#searchBar input[type=text] {
+  width:650px !important;
+}
+
+#filterSearch input[type=text] {
+  width:300px !important;
+}
+
+.btn-custom {
+  margin-left: 0px !important;
+}
+
+h5 {
+  font-size: 8pt;
+}
+
+.footer {
+  height: 100px;
+  margin-top: 100px;
+  bottom:0 !important;
+  position: relative;
+  margin-top: 600px; /* negative value of footer height */
+  clear:both;
+  padding-top:20px;
+}
+
+.footer-about {
+  height: 100px;
+  margin-top: 100px;
+  bottom:0 !important;
+  position: relative;
+  margin-top: 850px; /* negative value of footer height */
+  clear:both;
+  padding-top:20px;
+}
+
+.footer-main {
+  height: 100px;
+  margin-top: 100px;
+  bottom:0 !important;
+  position: relative;
+  clear:both;
+  padding-top:20px;
+}
+
+.footer-search {
+  height: 100px;
+  margin-top: 100px;
+  bottom:0 !important;
+  position: relative;
+  clear:both;
+  padding-top:20px;
+}
+
+.grey-line {
+  color: #9AB1C5;
+}
+
+.page-head {
+  height: 100px;
+}
+
+.title {
+    position: absolute;
+    top: 19%;
+    left: 10%;
+    font-family: "Gotham Bold";
+    font-size: 36pt;
+    color: white;
+}
+
+.subtitle {
+    position: absolute;
+    top: 29%;
+    left: 10%;
+    font-family: "Gotham Medium";
+    font-size: 18pt;
+    color: white;
+}
+
+.product-text {
+  position: absolute;
+  left: 10%;
+}
+
+.product-header {
+  font-family: "Gotham Medium";
+  font-size: 18pt;
+  color: black;
+}
+
+.product-bold {
+  font-family: "Gotham Medium";
+  font-size: 12pt;
+  color: black;
+}
+
+.product-info {
+  font-family: "Gotham Light";
+  font-size: 12pt;
+  color: black;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:100px;
+}
+
+.product {
+  position: absolute;
+  left: 6%;
+}
+
+.nav-option {
+  font-size: 8pt !important;
+  font-family: "Gotham Light";
+  height:18px;
+}
+
+.form-heading {
+  font-family: "Gotham Medium";
+}
+
+.extra-info {
+  font-family: "Gotham Medium";
+  color: gray;
+  font-size: 9pt;
+}
+
+.grey-icon {
+  color: gray;
+}
+
+.search_title {
+  font-family: "Gotham Medium";
+  font-size: 32pt;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.search-head {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.results {
+  padding-left: 200px;
+}
+
+.align-right {
+  text-align: right;
+}

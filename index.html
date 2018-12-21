@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Arcus • Home</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body class="container-fluid">
+  <!-- Start your project here-->
+
+  <!--Main Navigation-->
+  <header>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light white lighten-4 bottom-bord">
+      <!-- Additional container -->
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mr-4" href="index.html"><img src="img/pa_logo.png" height="50" class="d-inline-block align-top"
+          alt="mdb logo"></a>
+          <!-- Collapse button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+          <form action="/search" method="GET" >
+                <select name="search" id="search" onchange="this.form.submit()">
+                  <option value="1">Select Product Family</option>
+                  <option value="storage">Storage</option>
+                  <option value="compute">Compute</option>
+                  <option value="database">Database</option>
+                  <option value="migration">Migration</option>
+                  <option value="networking and content delivery">Networking & Content Delivery</option>
+                  <option value="development">Development Tools</option>
+                  <option value="management tools">Management Tools</option>
+                  <option value="media services">Media Services</option>
+                  <option value="security,identity and compliance">Security, Identity & Compliance</option>
+                  <option value="analytics">Analytics</option>
+                  <option value="machine learning">Machine Learning</option>
+                  <option value="mobile services">Mobile Services</option>
+                  <option value="ar & vr">AR & VR</option>
+                  <option value="application integration">Application Integration</option>
+                  <option value="customer engagement">Customer Engagement</option>
+                  <option value="desktop and app streaming">Desktop & App Streaming</option>
+                  <option value="internet of things">Internet Of Things</option>
+                  <option value="game development">Game Development</option>
+                </select>
+          </form>
+          <!-- Links -->
+          &nbsp;&nbsp;&nbsp;&nbsp;
+
+          <form action="/search" method="GET">
+                <select name="search" id="search" onchange="this.form.submit()">
+                  <option value="1">Select Cloud Provider</option>
+                  <option value="aws">AWS</option>
+                  <option value="azure">Azure</option>
+                  <option value="gcp">GCP</option>
+                  <option value="sap">SAP</option>
+                </select>
+          </form>
+          <ul class="navbar-nav mr-auto gotham-light">
+        <!--     <li class="nav-item dropdown mr-4">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+               aria-expanded="false">PRODUCT FAMILY</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                  <!--Need to add links to search for each dropdown for that family-->
+          <!--          <a class="dropdown-item nav-option" href="search" name="search">Compute</a>
+                  <a class="dropdown-item nav-option" href="search">Storage</a>
+                 <a class="dropdown-item nav-option" href="search">Database</a>
+                 <a class="dropdown-item nav-option" href="search">Migration</a>
+                 <a class="dropdown-item nav-option" href="search">Networking & content delivery</a>
+                 <a class="dropdown-item nav-option" href="search">Developer tools</a>
+                <a class="dropdown-item nav-option" href="search">Management tools</a>
+                  <a class="dropdown-item nav-option" href="search">Media services</a>
+                 <a class="dropdown-item nav-option" href="search">Security, identity & compliance</a>
+                 <a class="dropdown-item nav-option" href="search">Analytics</a>
+                <a class="dropdown-item nav-option" href="search">Machine learning</a>
+                 <a class="dropdown-item nav-option" href="search">Mobile services</a>qA
+                 <a class="dropdown-item nav-option" href="search">AR & VR</a>
+                 <a class="dropdown-item nav-option" href="search">Application integration</a>
+                 <a class="dropdown-item nav-option" href="search">Customer engagement</a>
+                 <a class="dropdown-item nav-option" href="search">Desktop & app streaming</a>
+                 <a class="dropdown-item nav-option" href="search">Internet of things</a>
+               <a class="dropdown-item nav-option" href="search">Game development</a>
+               </div>
+           </li> -->
+
+            <!--  <li class="nav-item dropdown mr-4">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">CLOUD PROVIDER</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                  <!--Need to add links to search for each dropdown for that family in href-->
+                <!--     <a class="dropdown-item nav-option" href="search">AWS</a>
+                  <a class="dropdown-item nav-option" href="search">GCP</a>
+                  <a class="dropdown-item nav-option" href="search">Azure</a>
+                  <a class="dropdown-item nav-option" href="search">SAP</a>
+                </div>
+            </li> -->
+            <!--  <li class="nav-item mr-4">
+              <a class="nav-link" href="help.html">HELP</a>
+            </li> -->
+          </ul>
+
+          <!-- Links -->
+
+          <!--   <form class="form-inline mr-5">-->
+            <div class="md-form my-0">
+              <li class="nav-item mr-4">
+                <a class="nav-link" href="help">HELP</a>
+              </li>
+            <!--     <input class="form-control mr-sm-2 thin-line" type="text" placeholder="search" aria-label="Search">
+              <i class="fa fa-search" aria-hidden="true"></i> -->
+            </div>
+          <!--   </form>-->
+            <!--   <i class="fa fa-user" aria-hidden="true"></i>-->
+        </div>
+      </div>
+      <!-- Additional container -->
+    </nav>
+    <!--/.Navbar-->
+
+    <!--Mask & main page-->
+    <div id="intro" class="view mt-4">
+      <div class="mask">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-md-12">
+              <!-- Heading -->
+              <h2 class="font-weight-bold white-text pt-5 mb-2 gotham-bold">Welcome to Arcus</h2>
+              <!-- Description -->
+              <h4 class="white-text my-4 gotham-medium">PA's online portfolio across capability families within Innovation</h4>
+              <!-- Search form -->
+              <form class="form-inline active-cyan-4" id="searchBar" action="/search" method="GET">
+                <input class="form-control form-control-sm mr-3 w-75 ml-3" type="search" name="search" placeholder="search" aria-label="Search">
+                <input type="submit" />
+                //<a href="search"><i class="fa fa-search" aria-hidden="true"></i></a>
+              </form>
+              <!-- Add project button -->
+              <form class="form-inline active-cyan-4" id="searchBar">
+                <a class="nav-link" href="add_project"><button class="btn btn-light btn-sm btn-custom align-middle mr-3">Add a project</button><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Mask-->
+
+  </header>
+  <!--/.Main Navigation-->
+
+  <!-- Footer -->
+  <footer class="page-footer footer-main font-small black pt-4 gotham-light">
+    <div class="container-fluid text-center">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3 ml-5 text-md-left">
+          <!-- Content -->
+          <h5 class="text-uppercase">any questions, contact</h5>
+          <p>digital@paconsulting.com</p>
+        </div>
+        <!--/.Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-5 mt-md-0 mt-3 text-md-right">
+          <!-- Content -->
+          <p></p>
+          <p>Copyright © PA Knowledge Limited 2018</p>
+        </div>
+        <!--/.Grid column -->
+      </div>
+      <!--/.Grid row -->
+    </div>
+  </footer>
+  <!--/.Footer -->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+
+</body>
+
+</html>
