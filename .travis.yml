@@ -12,8 +12,8 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "eu-west-1"
-  app: "arcus"
-  env: "Arcus-env"
+  app: "arcus2"
+  env: "Arcus2-env"
   bucket_name: "elasticbeanstalk-eu-west-1-336209744632"
   bucket_path: "arcus"
   on:
