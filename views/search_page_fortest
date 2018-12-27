@@ -148,7 +148,7 @@
         <a href="search_results.html"><i class="fa fa-search" aria-hidden="true"></i></a>
       </form>
     </div>
-    <% if(data)
+    <% 
     var elem = 0;
     data.forEach(function(item){
         elem++;
@@ -173,9 +173,9 @@
             elem = 0;
         %>
         </div>
-        <%
+        <%    
         }
-    });
+    }); 
     if (elem != 0) {
     %>
         </div>
