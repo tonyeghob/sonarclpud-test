@@ -1,0 +1,6 @@
+INSERT INTO arcus (family, product,experience, client,contact,overview,provider,project,start_date,end_date,status,contact_email) 
+VALUES
+    ('Compute','foobar1',4,'Secret Client','Mickey Mouse','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et iaculis diam. Praesent eget egestas dui, vel sagittis dui. Proin mauris elit, ornare sed sem nec, semper consequat ex. Donec id odio tincidunt lectus mattis molestie.','AWS','Secret Project','01/01/2016','01/05/2016','Complete','foobar@pa.com'),
+    ('Compute','Elastic beanstalk',2,'Strange client','PA Person','Donec id odio tincidunt lectus mattis molestie.','AWS','Project X','12/05/2017','','Ongoing','pa@pa.com'),
+    ('Compute','App engine',2,'Govt Dept','PA Person','Donec id odio tincidunt lectus mattis molestie. Proin finibus metus ac pretium dignissim.','GCP','Project Z','12/05/2017','','Ongoing','pa@pa.com'),
+    ('Application Integration','foobar2',3,'Happy Client','Joe Schmoe','Sed et lacinia quam. Etiam rutrum neque ac tortor fermentum facilisis','GCP','Long Project','01/06/2017','','Ongoing','foobar@pa.com');

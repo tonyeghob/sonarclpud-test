@@ -148,171 +148,38 @@
         <a href="search_results.html"><i class="fa fa-search" aria-hidden="true"></i></a>
       </form>
     </div>
-
-    <div class="row mb-4">
-      <div class="col-sm-4">
-        <a href="about_product.html">
-          <div class="card hoverable">
-            <div class="card-body">
-              <h5 class="card-title product-bold">Amazon Lightsail Launch</h5>
-              <p class="card-text">Amazon LightSail Launch and Manage Virtual Private Servers</p>
-              <p class="card-text">Contact: James Smith</p>
-              <i class="fa fa-clock-o grey-icon mr-1" aria-hidden="true"></i><span class="extra-info mr-2">Completed</span>
-              <i class="fa fa-circle-o-notch grey-icon mr-1" aria-hidden="true"></i><span class="extra-info">Experience: 4/5</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-sm-4">
-        <a href="about_product.html">
-          <div class="card hoverable">
-            <div class="card-body">
-              <h5 class="card-title product-bold">Product title</h5>
-              <p class="card-text">Shoryt product bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p class="card-text">Contact: XXXX</p>
-              <i class="fa fa-clock-o grey-icon mr-1" aria-hidden="true"></i><span class="extra-info mr-2">Completed</span>
-              <i class="fa fa-circle-o-notch grey-icon mr-1" aria-hidden="true"></i><span class="extra-info">Experience: 4/5</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-sm-4">
-        <a href="about_product.html">
-          <div class="card hoverable">
-            <div class="card-body">
-              <h5 class="card-title product-bold">Product title</h5>
-              <p class="card-text">Shoryt product bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p class="card-text">Contact: XXXX</p>
-              <i class="fa fa-clock-o grey-icon mr-1" aria-hidden="true"></i><span class="extra-info mr-2">Completed</span>
-              <i class="fa fa-circle-o-notch grey-icon mr-1" aria-hidden="true"></i><span class="extra-info">Experience: 4/5</span>
-            </div>
-          </div>
+    <% 
+    var elem = 0;
+    data.forEach(function(item){
+        elem++;
+        if (elem == 1) { %>
+            <div class="row mb-4">
+        <% } %>
+        <div class="col-sm-4">
+            <a href="about_product.html">
+              <div class="card hoverable">
+                <div class="card-body">
+                  <h5 class="card-title product-bold"><%= item.product %></h5>
+                  <p class="card-text"><%= item.overview %></p>
+                  <p class="card-text">Contact: <%= item.contact_email %></p>
+                  <i class="fa fa-clock-o grey-icon mr-1" aria-hidden="true"></i><span class="extra-info mr-2"><%= item.status %></span>
+                  <i class="fa fa-circle-o-notch grey-icon mr-1" aria-hidden="true"></i><span class="extra-info">Experience: <%= item.experience %></span>
+                </div>
+              </div>
+            </a>
         </div>
-      </a>
-    </div>
-
-    <div class="row mb-4">
-      <div class="col-sm-4">
-        <a href="about_product.html">
-          <div class="card hoverable">
-            <div class="card-body">
-              <h5 class="card-title product-bold">Amazon Lightsail Launch</h5>
-              <p class="card-text">Amazon LightSail Launch and Manage Virtual Private Servers</p>
-              <p class="card-text">Contact: James Smith</p>
-              <i class="fa fa-clock-o grey-icon mr-1" aria-hidden="true"></i><span class="extra-info mr-2">Completed</span>
-              <i class="fa fa-circle-o-notch grey-icon mr-1" aria-hidden="true"></i><span class="extra-info">Experience: 4/5</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-sm-4">
-        <a href="about_product.html">
-          <div class="card hoverable">
-            <div class="card-body">
-              <h5 class="card-title product-bold">Product title</h5>
-              <p class="card-text">Shoryt product bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p class="card-text">Contact: XXXX</p>
-              <i class="fa fa-clock-o grey-icon mr-1" aria-hidden="true"></i><span class="extra-info mr-2">Completed</span>
-              <i class="fa fa-circle-o-notch grey-icon mr-1" aria-hidden="true"></i><span class="extra-info">Experience: 4/5</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-sm-4">
-        <a href="about_product.html">
-          <div class="card hoverable">
-            <div class="card-body">
-              <h5 class="card-title product-bold">Product title</h5>
-              <p class="card-text">Shoryt product bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p class="card-text">Contact: XXXX</p>
-              <i class="fa fa-clock-o grey-icon mr-1" aria-hidden="true"></i><span class="extra-info mr-2">Completed</span>
-              <i class="fa fa-circle-o-notch grey-icon mr-1" aria-hidden="true"></i><span class="extra-info">Experience: 4/5</span>
-            </div>
-          </div>
+        <%
+        if (elem == 3) {
+            elem = 0;
+        %>
         </div>
-      </a>
-    </div>
-    <div class="row mb-4">
-      <div class="col-sm-4">
-        <a href="about_product.html">
-          <div class="card hoverable">
-            <div class="card-body">
-              <h5 class="card-title product-bold">Amazon Lightsail Launch</h5>
-              <p class="card-text">Amazon LightSail Launch and Manage Virtual Private Servers</p>
-              <p class="card-text">Contact: James Smith</p>
-              <i class="fa fa-clock-o grey-icon mr-1" aria-hidden="true"></i><span class="extra-info mr-2">Completed</span>
-              <i class="fa fa-circle-o-notch grey-icon mr-1" aria-hidden="true"></i><span class="extra-info">Experience: 4/5</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-sm-4">
-        <a href="about_product.html">
-          <div class="card hoverable">
-            <div class="card-body">
-              <h5 class="card-title product-bold">Product title</h5>
-              <p class="card-text">Shoryt product bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p class="card-text">Contact: XXXX</p>
-              <i class="fa fa-clock-o grey-icon mr-1" aria-hidden="true"></i><span class="extra-info mr-2">Completed</span>
-              <i class="fa fa-circle-o-notch grey-icon mr-1" aria-hidden="true"></i><span class="extra-info">Experience: 4/5</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-sm-4">
-        <a href="about_product.html">
-          <div class="card hoverable">
-            <div class="card-body">
-              <h5 class="card-title product-bold">Product title</h5>
-              <p class="card-text">Shoryt product bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p class="card-text">Contact: XXXX</p>
-              <i class="fa fa-clock-o grey-icon mr-1" aria-hidden="true"></i><span class="extra-info mr-2">Completed</span>
-              <i class="fa fa-circle-o-notch grey-icon mr-1" aria-hidden="true"></i><span class="extra-info">Experience: 4/5</span>
-            </div>
-          </div>
+        <%    
+        }
+    }); 
+    if (elem != 0) {
+    %>
         </div>
-      </a>
-    </div>
-    <div class="row mb-4">
-      <div class="col-sm-4">
-        <a href="about_product.html">
-          <div class="card hoverable">
-            <div class="card-body">
-              <h5 class="card-title product-bold">Amazon Lightsail Launch</h5>
-              <p class="card-text">Amazon LightSail Launch and Manage Virtual Private Servers</p>
-              <p class="card-text">Contact: James Smith</p>
-              <i class="fa fa-clock-o grey-icon mr-1" aria-hidden="true"></i><span class="extra-info mr-2">Completed</span>
-              <i class="fa fa-circle-o-notch grey-icon mr-1" aria-hidden="true"></i><span class="extra-info">Experience: 4/5</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-sm-4">
-        <a href="about_product.html">
-          <div class="card hoverable">
-            <div class="card-body">
-              <h5 class="card-title product-bold">Product title</h5>
-              <p class="card-text">Shoryt product bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p class="card-text">Contact: XXXX</p>
-              <i class="fa fa-clock-o grey-icon mr-1" aria-hidden="true"></i><span class="extra-info mr-2">Completed</span>
-              <i class="fa fa-circle-o-notch grey-icon mr-1" aria-hidden="true"></i><span class="extra-info">Experience: 4/5</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-sm-4">
-        <a href="about_product.html">
-          <div class="card hoverable">
-            <div class="card-body">
-              <h5 class="card-title product-bold">Product title</h5>
-              <p class="card-text">Shoryt product bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p class="card-text">Contact: XXXX</p>
-              <i class="fa fa-clock-o grey-icon mr-1" aria-hidden="true"></i><span class="extra-info mr-2">Completed</span>
-              <i class="fa fa-circle-o-notch grey-icon mr-1" aria-hidden="true"></i><span class="extra-info">Experience: 4/5</span>
-            </div>
-          </div>
-        </div>
-      </div>
+    <% } %>
 
       <div class="row">
         <!--only want this to appear when not on page 1... maybe just have all results on one page and scrap these buttons?-->
