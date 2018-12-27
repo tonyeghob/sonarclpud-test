@@ -117,15 +117,8 @@ app.post('/post_project', function(req, res) {
     }
   };
 
-  app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname+ '/Arcus.html'));
-  });
-
 });
 
-//app.get('/search.html', function(req, res) {
-//  res.sendFile(path.join(__dirname+ '/search.html'));
-  //res.send('You sent the name "' + req.query + '".');
 app.get('/search', function (req, res) {
   logger.debug('Query: %s', req.query.search);
 
