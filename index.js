@@ -104,12 +104,13 @@ app.use(express.static('public'));
 app.post('/post_project', function(req, res) {
   res.send('Thanks for submitting data about your ' + req.body.family + ' project.');
 
-  var formData = [[req.body.family,req.body.product,req.body.rating,req.body.client,req.body.contact_name,req.body.overview,req.body.provider,req.body.project,req.body.start_date,req.body.end_date,req.body.status,req.body.contact_email]];
+  var formData = [[req.body.family,req.body.product,req.body.rating,req.body.client,req.body.contact_name,req.body.overview,req.body.provider,req.body.project,req.body.start_date,req.body.end_date,req.body.status,req.body.contact_email,req.body.url]];
 
   logger.debug('Formdata: %o', formData);
 
-  connection.query('CREATE TABLE IF NOT EXISTS arcus (family varchar(250) DEFAULT NULL, product varchar(320) DEFAULT NULL,  experience int(255) DEFAULT NULL, client varchar(320) DEFAULT NULL,contact varchar(320) DEFAULT NULL,overview text(65532) DEFAULT NULL,provider varchar(100) DEFAULT NULL,project varchar(320) DEFAULT NULL, start_date varchar(100) DEFAULT NULL,end_date varchar(320) DEFAULT NULL,status varchar(100) DEFAULT NULL,contact_email varchar(320) DEFAULT NULL );')
-  connection.query('INSERT INTO arcus (family, product,experience, client,contact,overview,provider,project,start_date,end_date,status,contact_email) VALUES ?', [formData]) , function(req,res,err) {
+  connection.query('ALTER TABLE arcus ADD COLUMN product_url VARCHAR(320) AFTER contact_email;')
+  connection.query('CREATE TABLE IF NOT EXISTS arcus (family varchar(250) DEFAULT NULL, product varchar(320) DEFAULT NULL,  experience int(255) DEFAULT NULL, client varchar(320) DEFAULT NULL,contact varchar(320) DEFAULT NULL,overview text(65532) DEFAULT NULL,provider varchar(100) DEFAULT NULL,project varchar(320) DEFAULT NULL, start_date varchar(100) DEFAULT NULL,end_date varchar(320) DEFAULT NULL,status varchar(100) DEFAULT NULL,contact_email varchar(320) DEFAULT NULL,product_url varchar(320) DEFAULT NULL );')
+  connection.query('INSERT INTO arcus (family, product,experience, client,contact,overview,provider,project,start_date,end_date,status,contact_email,product_url) VALUES ?', [formData]) , function(req,res,err) {
     if(err) {
       res.send('Error');
     } else {
