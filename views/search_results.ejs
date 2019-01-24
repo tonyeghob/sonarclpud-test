@@ -159,10 +159,12 @@
             <a href="about_product.html">
               <div class="card hoverable">
                 <div class="card-body">
-                  <h5 class="card-title product-bold"><%= item.product %></h5>
-                  <p class="card-text"><%= item.overview %></p>
-                  <p class="card-text">Contact: <%= item.contact_email %></p>
-                  <i class="fa fa-clock-o grey-icon mr-1" aria-hidden="true"></i><span class="extra-info mr-2"><%= item.status %></span>
+                  <h5 class="card-title product-bold">Product: <%= item.product %></h5>
+                    <p class="card-text"> Product Link: <%= item.url %></p>
+                      <p class="card-text"> Overview: <%= item.overview %></p>
+                    <p class="card-text">Contact Name: <%= item.name %></p>
+                  <p class="card-text">Contact Email: <%= item.contact_email %></p>
+                  <i class="fa fa-clock-o grey-icon mr-1" aria-hidden="true"></i><span class="extra-info mr-2"> Project Status: <%= item.status %></span>
                   <i class="fa fa-circle-o-notch grey-icon mr-1" aria-hidden="true"></i><span class="extra-info">Experience: <%= item.experience %></span>
                 </div>
               </div>
