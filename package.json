@@ -6,7 +6,7 @@
     "ejs": "*",
     "ejs-lint": "^0.3.0",
     "errorhandler": "*",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "express-myconnection": "*",
     "jade": "*",
     "method-override": "^3.0.0",
